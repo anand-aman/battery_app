@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:batteryapp/screens/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,14 +8,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Batter Health Manager'
-          ),
-        ),
-      ),
+    return MaterialApp(
+      home: HomePage(),
     );
   }
 }
