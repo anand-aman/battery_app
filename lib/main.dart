@@ -7,6 +7,14 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Batter Health Manager'
+          ),
+        ),
+      ),
+    );
   }
 }
